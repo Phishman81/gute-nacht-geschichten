@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cream text-warm-brown font-story;
+  }
+
+  /* Scrollbar Styling */
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-soft-peach;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-warm-orange;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-warm-red;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-warm-orange hover:bg-warm-red text-white font-bold py-3 px-6 rounded-full
+           transform transition-all duration-200 hover:scale-105 active:scale-95
+           shadow-lg hover:shadow-xl;
+  }
+
+  .input-field {
+    @apply w-full p-3 rounded-lg border-2 border-soft-peach focus:border-warm-orange
+           focus:outline-none transition-colors duration-200 bg-white/80;
+  }
+
+  .story-card {
+    @apply bg-white/90 rounded-2xl p-6 shadow-xl backdrop-blur-sm
+           border-2 border-soft-peach;
+  }
+}
+
+/* Custom animations */
+@keyframes vehicle-float {
+  0%, 100% { 
+    transform: translateY(0) rotate(0deg); 
+  }
+  25% { 
+    transform: translateY(-10px) rotate(-2deg); 
+  }
+  75% { 
+    transform: translateY(-10px) rotate(2deg); 
+  }
+}
+
+.vehicle-float {
+  animation: vehicle-float 4s ease-in-out infinite;
+}
+
+/* Loading spinner */
+.spinner {
+  border: 4px solid rgba(255, 107, 53, 0.3);
+  border-radius: 50%;
+  border-top: 4px solid #FF6B35;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
