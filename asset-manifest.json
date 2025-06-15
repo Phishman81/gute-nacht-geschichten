@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/gute-nacht-geschichten/static/css/main.48d70cb4.css",
+    "main.js": "/gute-nacht-geschichten/static/js/main.78fa0e0b.js",
+    "index.html": "/gute-nacht-geschichten/index.html",
+    "main.48d70cb4.css.map": "/gute-nacht-geschichten/static/css/main.48d70cb4.css.map",
+    "main.78fa0e0b.js.map": "/gute-nacht-geschichten/static/js/main.78fa0e0b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.48d70cb4.css",
+    "static/js/main.78fa0e0b.js"
+  ]
+}
